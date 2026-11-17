@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+"""完整中文词表：只保留具体名词/人物（去掉形容词与抽象词）。"""
+ZH = {
+ "dog":"狗","man":"男人","boy":"男孩","girl":"女孩","woman":"女人","people":"人们","ball":"球",
+ "grass":"草地","snow":"雪","child":"孩子","person":"人","field":"田野","group":"一群人","men":"男人们",
+ "children":"孩子们","rock":"岩石","beach":"海滩","street":"街道","bike":"自行车","mountain":"山",
+ "camera":"相机","tree":"树","pool":"泳池","toy":"玩具","women":"女人们","soccer":"足球","wall":"墙",
+ "building":"建筑","stick":"树枝","dirt":"泥地","kid":"小孩","park":"公园","football":"橄榄球",
+ "car":"汽车","skateboard":"滑板","crowd":"人群","hill":"小山","swing":"秋千","bicycle":"自行车",
+ "sand":"沙子","race":"比赛","baby":"婴儿","wave":"波浪","helmet":"头盔","ocean":"大海","road":"道路",
+ "bench":"长椅","game":"比赛","sidewalk":"人行道","ground":"地面","fence":"栅栏","basketball":"篮球",
+ "skateboarder":"滑板者","track":"跑道","frisbee":"飞盘","guy":"小伙子","ramp":"坡道","boat":"船",
+ "lake":"湖","city":"城市","path":"小路","baseball":"棒球","rope":"绳子","motorcycle":"摩托车",
+ "sign":"标牌","wood":"木头","lady":"女士","couple":"一对情侣","horse":"马","table":"桌子","bird":"鸟",
+ "snowboarder":"单板滑雪者","adult":"成年人","cliff":"悬崖","river":"河","ice":"冰","yard":"院子",
+ "pole":"杆子","backpack":"背包","skier":"滑雪者","flower":"花","chair":"椅子","biker":"骑车人",
+ "hockey":"曲棍球","surfer":"冲浪者","fountain":"喷泉","drink":"饮料","toddler":"幼儿","forest":"森林",
+ "playground":"操场","ski":"滑雪板","step":"台阶","guitar":"吉他","brick":"砖","leash":"牵引绳",
+ "climber":"攀爬者","window":"窗户","surfboard":"冲浪板","bar":"栏杆","bed":"床","trail":"小径",
+ "sky":"天空","shore":"岸边","stone":"石头","puppy":"小狗","bridge":"桥","floor":"地板",
+ "greyhound":"灵缇犬","railing":"扶手","obstacle":"障碍物","hiker":"徒步者","house":"房子",
+ "room":"房间","stair":"楼梯","mud":"泥","store":"商店","player":"运动员","swimmer":"游泳者",
+ "rider":"骑手","athlete":"运动员","tenni":"网球","blond":"金发的人","male":"男性","female":"女性",
+ "object":"物体","set":"一组","line":"线","edge":"边缘","course":"球场","very":"","picture":"照片",
+ "background":"背景","trick":"技巧","smiling":"微笑","outdoor":"户外","tall":"高","long":"长",
+ "high":"高","wet":"湿","wooden":"木质","rocky":"多石","snowy":"积雪","grassy":"长草","colorful":"鲜艳",
+ "striped":"条纹","tan":"棕褐色","older":"年长","sandy":"沙质","plastic":"塑料","shallow":"浅水",
+ "bright":"明亮","asian":"亚裔","blonde":"金发",
+}
+KEEP = [w for w, z in ZH.items() if z and len(z) > 1]

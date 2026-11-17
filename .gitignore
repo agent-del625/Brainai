@@ -1,0 +1,25 @@
+# 数据与模型权重（体积大，不进仓库）
+data/
+ckpt/
+logs/
+*.npz
+*.npy
+*.pt
+*.pth
+*.onnx
+*.parquet
+*.ndjson
+*.zip
+*.wav
+*.mp3
+
+# 密钥
+.mmkey
+*.pem
+.env
+
+# Python / Node
+__pycache__/
+*.pyc
+.venv/
+node_modules/
